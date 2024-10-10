@@ -1,0 +1,35 @@
+<div class="uk-position-relative uk-margin-large-top">
+    <div class="uk-position-top">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-container">
+                <!-- Hamburger Menu for Mobile -->
+                <div class="uk-navbar-center uk-margin-large-top uk-hidden@m">
+                    <a class="uk-navbar-toggle" href="#" uk-toggle="target: #navbar-collapse">
+                        <span uk-navbar-toggle-icon></span>
+                    </a>
+                </div>
+
+                <!-- Menu for Desktop -->
+                <div class="uk-navbar-center uk-visible@m">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">A Rolling Films</a></li>
+                        <li><a href="#">O Estúdio</a></li>
+                        <li><a href="#">SHOWROOM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Collapsible Menu for Mobile -->
+        <div id="navbar-collapse" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="#">A ROLLING FILMS</a></li>
+                    <li><a href="#">O ESTÚDIO</a></li>
+                    <li><a href="#">SHOWROOM</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

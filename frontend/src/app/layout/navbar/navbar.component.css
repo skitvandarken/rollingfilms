@@ -1,0 +1,46 @@
+/* Navbar links styling */
+.uk-navbar-nav li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 600;
+    font-size: 24;
+}
+
+.uk-navbar-nav li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.uk-navbar-nav li a:hover::after {
+    width: 100%;
+}
+
+/* Center the hamburger toggle on mobile */
+.uk-navbar-center.uk-hidden\@m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Offcanvas close button style */
+.uk-offcanvas-close {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+/* Ensure the close button is visible */
+.uk-offcanvas-close span {
+    color: #fff;
+}
